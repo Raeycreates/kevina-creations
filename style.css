@@ -124,31 +124,31 @@ footer p { opacity: 0.8; }
     fill: currentColor;
 }
 /* Stylish Menu Buttons */
-nav a {
+header nav a {
     color: white;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 14px;
-    padding: 8px 16px; /* Makes the button pill-shaped */
-    border-radius: 20px; /* Rounds the edges */
-    background-color: rgba(255, 255, 255, 0.1); /* Soft transparent white */
+    padding: 8px 16px !important; 
+    border-radius: 20px !important; 
+    background-color: rgba(255, 255, 255, 0.15) !important; 
     transition: 0.3s ease-in-out;
     display: inline-block;
+    margin: 5px; /* Adds a little space around each button */
 }
 
 /* What happens when a customer hovers or taps */
-nav a:hover {
-    background-color: var(--lemon-green);
-    color: var(--dark-green);
+header nav a:hover {
+    background-color: var(--lemon-green) !important;
+    color: var(--dark-green) !important;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* Adjust spacing for mobile phones */
 @media (max-width: 768px) {
-    nav a {
-        padding: 6px 12px;
+    header nav a {
+        padding: 6px 12px !important;
         font-size: 12px;
-        margin: 2px;
     }
 }
